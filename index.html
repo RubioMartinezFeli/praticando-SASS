@@ -1,0 +1,35 @@
+<!--SASS es un preprocesador CSS, es una tecnologia que dota a CSS de capacidades de un
+lenguage de programacón, tenemos que instalarlo previamente.
+Los archivos sass no se pueden incluir en el head como se hace con los css,
+sino que se tienen que compilar para convertirlos en archivos css.
+Los archivos sass es mejor que los guardemos en .scss para no tener problemas de sintaxis,
+para compilarlo hay abrir cmd, ir a la carpeta del proyecto y
+escribir sass --watch styles.scss styles.css donde 
+styles.scss es el fichero de entrada y styles.css el de salida
+en nuestro head vamos a vinular nuestro fichero css generado tras la compilacion
+los cambios se compilan automaticamente-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo SASS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Practicando con SASS</h1>
+
+    <div class="caja">
+        <h2>Encabezado</h2>
+        <p>Hola</p>
+    </div>
+
+    <div class="caja">
+        <h2>Encabezado</h2>
+        <p>Hola2</p>
+    </div>
+    
+</body>
+</html>

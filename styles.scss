@@ -1,0 +1,42 @@
+// En sass podemos tener modulos, el nombre del modulo a de empezar por _.
+@use 'anidación'; //Estamos haciendo uso del modulo anidación
+
+// Variables
+$color-principal: #ccc;
+$color-letra: green;
+
+body{
+    background: $color-principal; 
+}
+
+h1{
+    color: $color-letra;
+}
+
+p{
+    color: $color-letra;
+}
+
+//Mixins (son como las funciones)
+
+@mixin caja_personalizada($fondo: white) {
+    background-color: $fondo;
+    border: 4px solid black;
+    box-shadow: 0px opx 2px black;
+    color: $color-letra;
+    margin: 20px;
+}
+
+//Vamos a usar el mixin
+.caja{
+    @include caja_personalizada();
+}
+
+//Operadores
+.caja{
+    width: 400px + 100px;
+}
+
+
+
+    
